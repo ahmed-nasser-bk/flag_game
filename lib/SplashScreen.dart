@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 child: Lottie.asset('asset/lotties/floating-countries.json'),
               ),
               const Text(
-                "Guess the flag?",
+                "FlagGame",
                 style: TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.w900,
