@@ -51,7 +51,8 @@ class _QuizScreenState extends State<QuizScreen> {
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: const Color(0xFF1a374d),
+      //backgroundColor: const Color(0xFF1a374d),
+      backgroundColor: Colors.teal,
       body: SafeArea(
         child: Center(
           child: Column(
@@ -60,7 +61,7 @@ class _QuizScreenState extends State<QuizScreen> {
               const Text(
                 "Guess the flag?",
                 style: TextStyle(
-                  fontSize: 22,
+                  fontSize: 20,
                   fontWeight: FontWeight.w500,
                   color: Colors.white,
                 ),
@@ -122,7 +123,7 @@ class _QuizScreenState extends State<QuizScreen> {
                 },
                 child: const Text(
                   'Result',
-                  style: TextStyle(fontSize: 25),
+                  style: TextStyle(fontSize: 20, color: Colors.teal),
                 ),
               ),
             ],
@@ -153,7 +154,7 @@ class FlagButton extends StatelessWidget {
         InkWell(
           onTap: onPressed,
           child: Container(
-            width: width * 0.45,
+            width: width * 0.35,
             height: height * 0.15,
             decoration: BoxDecoration(
               color: Colors.lightBlueAccent,

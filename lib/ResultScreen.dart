@@ -4,7 +4,12 @@ import 'package:flutter/material.dart';
 import 'CounterClass.dart';
 
 class ResultScreen extends StatefulWidget {
-  ResultScreen({Key? key, required this.corrects, required this.wrongs, required this.counter }) : super(key: key);
+  ResultScreen({
+    Key? key, 
+    required this.corrects, 
+    required this.wrongs, 
+    required this.counter
+  }) : super(key: key);
 
   int corrects;
   int wrongs;
@@ -19,8 +24,11 @@ class _ResultScreenState extends State<ResultScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF1a374d),
+      backgroundColor: Colors.teal,
       appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        foregroundColor: Colors.white,
         title: const Text(
           "Result",
           style: TextStyle(
@@ -72,7 +80,7 @@ class _ResultScreenState extends State<ResultScreen> {
               ),
               child: const Text(
               'Reset',
-              style: TextStyle(fontSize: 25)
+              style: TextStyle(fontSize: 20, color: Colors.teal)
               ),
               onPressed: (){
                 setState(() {
